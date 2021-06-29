@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
+      <link rel="stylesheet" href="/stylesheets/main.css" />
+      <title>Express Cluckr App</title>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="https://images.freeimages.com/images/small-previews/b36/chicken-1371898.jpg" alt="chicken" class="img">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                      <li class="shift">
+                            <a class="nav-link" href="/clucks/cluck">Cluck!</a>
+                      </li>  
+                      <li class="shift">
+                            <% if (username) { %>
+                              <span class="navbar-text" id="username">
+                                  <%= username %> 
+                              </span>
+                               <form action="/sign_out" method="POST">
+                                  <input type="submit" class="btn btn-danger" value="Sign Out" />
+                              </form> 
+                        <%  } else { %>
+                              <a class="nav-link" href="/clucks/sign">Sign In</a>
+                        <% } %> 
+                        
+                      </li> 
+                </ul>
+            </div>
+          </nav>
+
+
+<div class="container">
+      
+
+
+    

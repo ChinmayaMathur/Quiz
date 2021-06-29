@@ -1,0 +1,21 @@
+.img {
+      border-radius: 50%;
+      width: 80px;
+}
+
+.shift { 
+      float:right;
+      display:block;
+      margin-right:0px;
+      clear:left;
+}
+
+.form-control {
+      width: 90vw;
+}
+
+.navbar-nav {
+      margin-left: auto;
+      font-weight: bold;
+      color: white;
+}
